@@ -2,8 +2,8 @@ function justInvoke(func) {
   return func();
 }
 
-function setThisWithCall(fn, thisValue, argument) {
-  return fn.call(thisValue, argument);
+function setThisWithCall(func, value, argument) {
+  return func.call(value, argument);
 }
 
 function setThisWithApply(fn, thisValue, ourArguments) {
